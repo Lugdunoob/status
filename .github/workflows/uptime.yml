@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: upptime/uptime-monitor@master
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          UPPTIME_GH_TOKEN: ${{ secrets.GH_TOKEN }}
