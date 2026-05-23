@@ -13,3 +13,5 @@ jobs:
       - uses: upptime/uptime-monitor@master
         with:
           UPPTIME_GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
