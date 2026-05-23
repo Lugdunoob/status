@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
       - uses: upptime/uptime-monitor@master
         env:
           GH_PAT: ${{ secrets.GH_TOKEN }}
